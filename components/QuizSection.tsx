@@ -6,7 +6,7 @@ const dictionary = {
   ar: {
     badge: "اكتشف نفسك",
     title1: "اعرف مجالك في",
-    title2: "الفريالنس",
+    title2: "الفريلانس",
     subtitle: "أجب على 6 أسئلة واكتشف المجال الأنسب لشخصيتك",
     resultHeader: "نتيجتك:",
     restartBtn: "أعد الاختبار",
