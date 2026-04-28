@@ -6,7 +6,7 @@ const dictionary = {
     quickLinksTitle: "روابط سريعة",
     followUsTitle: "تابعنا",
     rights: "© ٢٠٢٦ U-TURN B — كلية الإعلام، جامعة القاهرة",
-    hashtag: "#يوتيرن_أول_عند_كاريرك",
+    hashtag: "#كاريرك_عند_أول_يوتيرن",
     links: [
       { name: "من نحن", href: "#about" },
       { name: "المجالات", href: "#fields" },

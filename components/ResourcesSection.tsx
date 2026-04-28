@@ -24,7 +24,7 @@ const dictionary = {
       { title: "Coursera", en: "Coursera", url: "https://coursera.org", cat: "platform", free: false, icon: "🎓", desc: "كورسات احترافية وشهادات معتمدة من أفضل الجامعات العالمية." },
       { title: "Udemy", en: "Udemy", url: "https://udemy.com", cat: "platform", free: false, icon: "📚", desc: "دورات عملية تطبيقية بمختلف اللغات لتطوير مهاراتك بسرعة." },
       { title: "يوتيوب", en: "YouTube Tutorials", url: "https://youtube.com", cat: "platform", free: true, icon: "▶️", desc: "كنز القنوات التعليمية المجانية في كل المجالات الممكنة." },
-      { title: "freeCodeCamp", en: "freeCodeCamp", url: "https://freecodecamp.org", cat: "platform", free: true, icon: "💻", desc: "منهج برمي شامل ومجاني لتعلم تطوير الويب من الصفر." },
+      { title: "freeCodeCamp", en: "freeCodeCamp", url: "https://freecodecamp.org", cat: "platform", free: true, icon: "💻", desc: "منهج برمجي شامل ومجاني لتعلم تطوير الويب من الصفر." },
       { title: "Canva Design School", en: "Canva", url: "https://canva.com/learn", cat: "platform", free: true, icon: "🎨", desc: "دروس مجانية في التصميم الجرافيكي والهوية البصرية من كانفا." },
       { title: "Google Digital Garage", en: "Google", url: "https://learndigital.withgoogle.com", cat: "platform", free: true, icon: "📣", desc: "احصل على شهادة معتمدة في أساسيات التسويق الرقمي من جوجل." },
       { title: "Notion Portfolio", en: "Notion", url: "https://notion.so/templates", cat: "tool", free: true, icon: "📋", desc: "قوالب مجانية لبناء ملف أعمال (Portfolio) احترافي ومنظم." },
