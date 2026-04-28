@@ -46,6 +46,9 @@ export default function VisionMissionSection({ lang = "ar" }: { lang?: "ar" | "e
 
   return (
     <section id="vision" className="py-16 bg-white">
+      {/* Smooth transition divider from About section */}
+      <div className="teal-divider mb-12" />
+
       <div className="max-w-5xl mx-auto px-6">
         <div ref={ref} className="reveal text-center mb-10">
           <span className="text-[#f97316] text-xs font-bold uppercase tracking-widest mb-2 block">
@@ -76,7 +79,7 @@ export default function VisionMissionSection({ lang = "ar" }: { lang?: "ar" | "e
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
             {current.goals.map((g, i) => (
-              <div key={i} className="bg-[rgba(9,92,86,0.04)] border border-[#095c56]/10 p-3 rounded-lg flex items-center gap-2">
+              <div key={i} className="bg-[rgba(9,92,86,0.04)] border border-[#095c56]/10 p-3 rounded-lg flex items-center gap-2 hover:border-[#f97316]/30 transition-colors">
                 <span className="text-base">{g.icon}</span>
                 <span className="text-[#095c56]/80 text-xs font-semibold">{g.text}</span>
               </div>

@@ -32,7 +32,7 @@ export default function AboutSection({ lang = "ar" }: { lang?: "ar" | "en" }) {
           </div>
 
           {/* Image side — left in RTL */}
-          <div className="w-full aspect-[4/3] bg-white/10 border-2 border-dashed border-white/20 rounded-2xl flex items-center justify-center">
+          <div className="w-full aspect-[4/3] bg-white/10 border-2 border-dashed border-white/20 rounded-2xl flex items-center justify-center overflow-hidden">
             <span className="text-white/30 text-5xl">🖼️</span>
           </div>
         </div>
