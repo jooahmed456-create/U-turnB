@@ -48,11 +48,11 @@ export default function VisionMissionSection({ lang = "ar" }: { lang?: "ar" | "e
     <section id="vision" className="py-16 bg-white">
       <div className="max-w-5xl mx-auto px-6">
         <div ref={ref} className="reveal text-center mb-10">
-          <span className="text-[#f97316] text-xs font-bold uppercase tracking-widest mb-2 block">
+          <span className="text-[#F97316] text-sm font-bold uppercase tracking-widest mb-2 block">
             {current.badge}
           </span>
           <h2 className="text-3xl md:text-4xl font-black text-[#095c56]">
-            {current.title1} <span className="text-[#095c56]/30">&</span> {current.title2}
+            {current.title1} & {current.title2}
           </h2>
         </div>
 
