@@ -1,0 +1,119 @@
+"use client";
+import { useReveal } from "@/lib/useReveal";
+
+// 💡 القاموس الشامل لـ 17 رابطاً إخبارياً وتوثيقياً من ملف البيانات
+const dictionary = {
+  ar: {
+    badge: "في الإعلام",
+    title1: "التغطية",
+    title2: "الإعلامية",
+    subtitle: "رصد شامل ومستمر لكافة الأخبار والمنشورات التي تناولت حراك حملة U-TURN B",
+    actionText: "اضغط لفتح الخبر الأصلي ←",
+    media: [
+      { outlet: "موقع الحرية", title: "الحرية — إطلاق حملة التوعية بالفريلانس لتمكين الشباب", url: "https://alhorianews.com/sh/k8rj", icon: "📰" }, // [cite: 54]
+      { outlet: "الأهرام المسائي", title: "الأهرام — تغطية مميزة تسلط الضوء على رسالة الحملة", url: "https://www.facebook.com/share/p/1Gd1gbmaqk/", icon: "🗞️" }, // [cite: 57]
+      { outlet: "المصري اليوم", title: "المصري اليوم — المبادرة ضمن جهود تمكين الشباب اقتصادياً", url: "https://www.almasryalyoum.com/news/details/4208852", icon: "📋" }, // [cite: 61]
+      { outlet: "القاهرة الآن", title: "جريدة القاهرة الآن — تغطية شاملة لمشروع التخرج", url: "https://alkahira-alan.blogspot.com/2026/04/u-turn-b.html", icon: "🗞️" }, // [cite: 65]
+      { outlet: "فيسبوك", title: "فيسبوك — نجاح ندوة دراما رمضان ٢٠٢٦ بجامعة القاهرة", url: "https://www.facebook.com/share/p/1DTXZERMuu/", icon: "🎤" }, // [cite: 58]
+      { outlet: "إنستجرام", title: "إنستجرام — لقطات من مبادرة دعم محاربات السرطان ببهية", url: "https://www.instagram.com/p/DV3_VnOjHvp/", icon: "📸" }, // [cite: 56]
+      { outlet: "فيسبوك", title: "فيسبوك — فعاليات يوم اليتيم بالتعاون مع فريق بين نبضين", url: "https://www.facebook.com/share/p/1ZVePywNf7/", icon: "🤝" }, // [cite: 59]
+      { outlet: "تيك توك", title: "تيك توك — محتوى توعوي سريع عن عالم العمل الحر", url: "https://www.tiktok.com/@uturnnb", icon: "📱" }, // [cite: 40]
+      { outlet: "فيسبوك", title: "فيسبوك — متابعة حية لأنشطة الحملة الميدانية بالجامعة", url: "https://www.facebook.com/share/p/1E8Y4BJLwA/", icon: "📱" }, // [cite: 60]
+      { outlet: "إنستجرام", title: "إنستجرام — كواليس مصورة وحصرية لفعاليات الفريق", url: "https://www.instagram.com/p/DXpbw9IliL4/", icon: "📸" }, // [cite: 67]
+      { outlet: "فيسبوك", title: "فيسبوك — ألبوم صور يوثق انطلاق فعاليات مشروعنا", url: "https://www.facebook.com/share/18ajTqVPsw/", icon: "🖼️" }, // [cite: 64]
+      { outlet: "فيسبوك", title: "فيسبوك — رصد لمدى انتشار وتفاعل الجمهور مع الحملة", url: "https://www.facebook.com/share/1CCFHsRiev/", icon: "📈" }, // [cite: 68]
+      { outlet: "فيسبوك", title: "فيسبوك — المنشور التعريفي الأول بهوية U-turn B", url: "https://www.facebook.com/share/1DsBwyJMG1/", icon: "🆔" }, // [cite: 38]
+      { outlet: "إنستجرام", title: "إنستجرام — الحساب الرسمي لمتابعة كافة الأنشطة", url: "https://www.instagram.com/u.turn.b", icon: "📸" }, // [cite: 39]
+      { outlet: "فيسبوك", title: "فيسبوك — توثيق أنشطة الفريق داخل حرم جامعة القاهرة", url: "https://www.facebook.com/share/p/1KfNuXrTeC/", icon: "🏛️" }, // [cite: 41]
+      { outlet: "فيسبوك", title: "فيسبوك — فعالية طلابية مميزة لمشروع تخرج الإعلام", url: "https://www.facebook.com/share/p/1ETs3X6Jyt/", icon: "🎓" } // [cite: 41]
+    ]
+  },
+  en: {
+    badge: "Media Coverage",
+    title1: "Media",
+    title2: "Highlights",
+    subtitle: "Complete and continuous monitoring of all news and posts regarding U-TURN B campaign",
+    actionText: "Click to open original source →",
+    media: [
+      { outlet: "Al-Horria", title: "Al-Horria — Launching Freelance Campaign for Youth", url: "https://alhorianews.com/sh/k8rj", icon: "📰" },
+      { outlet: "Al-Ahram", title: "Al-Ahram — Special Coverage on Campaign Mission", url: "https://www.facebook.com/share/p/1Gd1gbmaqk/", icon: "🗞️" },
+      { outlet: "Al-Masry Al-Youm", title: "Al-Masry Al-Youm — Initiative in Economic Empowerment", url: "https://www.almasryalyoum.com/news/details/4208852", icon: "📋" },
+      { outlet: "Cairo Now", title: "Cairo Now — Comprehensive Graduation Project Coverage", url: "https://alkahira-alan.blogspot.com/2026/04/u-turn-b.html", icon: "🗞️" },
+      { outlet: "Facebook", title: "Facebook — Success of Ramadan Drama Seminar at CU", url: "https://www.facebook.com/share/p/1DTXZERMuu/", icon: "🎤" },
+      { outlet: "Instagram", title: "Instagram — Supporting Breast Cancer Survivors at Baheya", url: "https://www.instagram.com/p/DV3_VnOjHvp/", icon: "📸" },
+      { outlet: "Facebook", title: "Facebook — Orphan's Day in Collaboration with Bayn Nabdayn", url: "https://www.facebook.com/share/p/1ZVePywNf7/", icon: "🤝" },
+      { outlet: "TikTok", title: "TikTok — Quick Freelance Awareness Content", url: "https://www.tiktok.com/@uturnnb", icon: "📱" },
+      { outlet: "Facebook", title: "Facebook — Live Updates of Field Activities at Campus", url: "https://www.facebook.com/share/p/1E8Y4BJLwA/", icon: "📱" },
+      { outlet: "Instagram", title: "Instagram — Exclusive Behind the Scenes Moments", url: "https://www.instagram.com/p/DXpbw9IliL4/", icon: "📸" },
+      { outlet: "Facebook", title: "Facebook — Photo Album Documenting Our Project Launch", url: "https://www.facebook.com/share/18ajTqVPsw/", icon: "🖼️" },
+      { outlet: "Facebook", title: "Facebook — Monitoring Campaign Reach and Engagement", url: "https://www.facebook.com/share/1CCFHsRiev/", icon: "📈" },
+      { outlet: "Facebook", title: "Facebook — First Identity Reveal of U-turn B", url: "https://www.facebook.com/share/1DsBwyJMG1/", icon: "🆔" },
+      { outlet: "Instagram", title: "Instagram — Official Account for All Activities", url: "https://www.instagram.com/u.turn.b", icon: "📸" },
+      { outlet: "Facebook", title: "Facebook — Documenting Team Activities at Cairo University", url: "https://www.facebook.com/share/p/1KfNuXrTeC/", icon: "🏛️" },
+      { outlet: "Facebook", title: "Facebook — Special Student Event for Graduation Project", url: "https://www.facebook.com/share/p/1ETs3X6Jyt/", icon: "🎓" }
+    ]
+  }
+};
+
+export default function MediaSection({ lang = "ar" }: { lang?: "ar" | "en" }) {
+  const ref = useReveal();
+  const current = dictionary[lang] || dictionary["ar"];
+  const isRTL = lang === 'ar';
+
+  return (
+    <section id="media" className="py-24 overflow-hidden bg-transparent">
+      <div ref={ref} className="reveal text-center mb-16 px-6">
+        <span className="text-[#f97316] text-sm font-bold uppercase tracking-widest mb-4 block">{current.badge}</span>
+        <h2 className="text-5xl md:text-7xl font-black mb-4 leading-tight" style={{ color: "var(--text-primary, #fff)" }}>
+          {current.title1} <span className="gradient-text">{current.title2}</span>
+        </h2>
+        <p className="max-w-2xl mx-auto text-lg text-gray-400">{current.subtitle}</p>
+      </div>
+
+      {/* 💡 السير المتحرك اللانهائي (Seamless Loop Marquee) */}
+      <div className="relative flex overflow-hidden group">
+        {/* نكرر القائمة مرتين لضمان استمرارية الدوران بدون فجوات */}
+        <div className="flex py-12 animate-marquee whitespace-nowrap group-hover:pause-animation">
+          {[...current.media, ...current.media].map((m, i) => (
+            <a 
+              key={i} 
+              href={m.url} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-block mx-4 bg-[#141414] border border-[#242424] rounded-2xl p-7 w-[340px] transition-all hover:border-[#f97316]/50 hover:scale-105 shadow-xl shadow-black/20"
+            >
+              <div className="flex items-center gap-3 mb-5">
+                <span className="text-3xl">{m.icon}</span>
+                <span className="text-white font-black text-xs uppercase tracking-widest opacity-80">{m.outlet}</span>
+              </div>
+              <h3 className="text-gray-100 text-base font-bold leading-relaxed whitespace-normal line-clamp-2 h-12">
+                {m.title}
+              </h3>
+              <div className="mt-6 pt-4 border-t border-[#242424] text-[#f97316] text-xs font-bold flex items-center justify-between">
+                <span>{current.actionText}</span>
+                <span className="text-lg">↗</span>
+              </div>
+            </a>
+          ))}
+        </div>
+      </div>
+
+      <style jsx>{`
+        @keyframes marquee {
+          0% { transform: translateX(0); }
+          /* 💡 سر الدوران اللانهائي: التحريك بـ 50% فقط لأن المحتوى مكرر مرتين */
+          100% { transform: translateX(${isRTL ? '50%' : '-50%'}); }
+        }
+        .animate-marquee {
+          display: flex;
+          width: max-content;
+          /* ضبط السرعة لتكون انسيابية مريحة للعين */
+          animation: marquee 60s linear infinite;
+        }
+        .group-hover\:pause-animation:hover {
+          animation-play-state: paused;
+        }
+      `}</style>
+    </section>
+  );
+}
