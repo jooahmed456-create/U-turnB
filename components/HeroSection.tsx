@@ -9,7 +9,7 @@ const dictionary = {
     subtitle: "نسعى إلى نشر ثقافة العمل الحر بين الشباب وتمكينهم من بناء مستقبل مهني مستقل من خلال المعرفة، الأدوات، وقصص الإلهام الحقيقية",
     cta1: "اعرف مجالك في الفريلانس 🎯",
     cta2: "تعرف علينا ←",
-    stats: [ { num: "٤", label: "مجالات رئيسية" }, { num: "+١٢", label: "أداة ومنصة" }, { num: "٦", label: "قصص نجاح" } ]
+    stats: [ { num: "٤", label: "مجالات رئيسية" }, { num: "+١٢", label: "أداة ومنصة" }, { num: "٤", label: "قصص نجاح" } ]
   },
   en: {
     badge: "Student Awareness Campaign — Mass Comm, Cairo University",
@@ -18,7 +18,7 @@ const dictionary = {
     subtitle: "We aim to spread freelance culture among youth and empower them to build an independent career through knowledge, tools, and real inspiration.",
     cta1: "Discover Your Field 🎯",
     cta2: "About Us ←",
-    stats: [ { num: "4", label: "Main Fields" }, { num: "12+", label: "Tools & Platforms" }, { num: "6", label: "Success Stories" } ]
+    stats: [ { num: "4", label: "Main Fields" }, { num: "12+", label: "Tools & Platforms" }, { num: "4", label: "Success Stories" } ]
   }
 };
 
