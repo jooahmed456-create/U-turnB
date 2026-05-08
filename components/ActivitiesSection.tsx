@@ -97,6 +97,50 @@ const events = [
       "https://res.cloudinary.com/dkh59ytfc/image/upload/v1777393289/photo_2026-04-26_06-54-22_2_vvm24u.jpg",
       "https://res.cloudinary.com/dkh59ytfc/image/upload/v1777393290/photo_2026-04-26_06-54-24_2_grlbjy.jpg"
     ]
+  },
+  {
+    titleAr: "حدث نادي الزمالك 2026",
+    titleEn: "Zamalek Club Event 2026",
+    descAr: "مشاركة الفريق في فعاليات توعوية بنادي الزمالك لدعم الشباب رياضياً ومهنياً.",
+    descEn: "The team's participation in awareness events at Zamalek Club to support youth athletically and professionally.",
+    expandedAr: "شارك فريق U-TURN B في فعاليات مميزة بنادي الزمالك، حيث قدمت الحملة ورش عمل توعوية حول أهمية العمل الحر وتطوير المهارات المهنية للشباب. تضمن الحدث لقاءات تفاعلية مع شباب النادي وتوزيع مطبوعات توعوية.",
+    expandedEn: "U-TURN B team participated in special events at Zamalek Club, where the campaign presented awareness workshops about the importance of freelancing and developing professional skills for youth. The event included interactive meetings with the club's youth and distribution of awareness materials.",
+    mainImage: "https://res.cloudinary.com/dkh59ytfc/image/upload/v1778245532/photo_2026-05-08_16-03-18_xp9g4o.jpg",
+    gallery: [
+      "https://res.cloudinary.com/dkh59ytfc/image/upload/v1778245532/photo_2026-05-08_16-03-29_hznmcx.jpg",
+      "https://res.cloudinary.com/dkh59ytfc/image/upload/v1778245532/photo_2026-05-08_16-03-23_gknn2e.jpg",
+      "https://res.cloudinary.com/dkh59ytfc/image/upload/v1778245531/photo_2026-05-08_16-03-07_ec4722.jpg",
+      "https://res.cloudinary.com/dkh59ytfc/image/upload/v1778245531/photo_2026-05-08_16-03-12_yqpbxe.jpg",
+      "https://res.cloudinary.com/dkh59ytfc/image/upload/v1778245531/photo_2026-05-08_16-02-38_z3cord.jpg"
+    ]
+  },
+  {
+    titleAr: "حدث يو-تيرن بي 2026",
+    titleEn: "U-TurnB Event 2026",
+    descAr: "فعالية خاصة بحملة يو-تيرن بي لنشر الوعي بثقافة العمل الحر بين الشباب.",
+    descEn: "A special U-TurnB campaign event to spread awareness about freelancing culture among youth.",
+    expandedAr: "نظم فريق U-TURN B فعالية خاصة بالحملة في أحد المواقع المميزة، هدفت إلى التعريف بأنشطة الحملة وأهدافها في تمكين الشباب اقتصادياً. تضمن الحدث عروض تقديمية وتفاعلية مع الحضور.",
+    expandedEn: "The U-TURN B team organized a special campaign event at a distinctive venue, aimed at introducing the campaign's activities and goals in economically empowering youth. The event included presentations and interactive engagement with attendees.",
+    mainImage: "https://res.cloudinary.com/dkh59ytfc/image/upload/v1778245559/photo_2026-05-08_16-03-44_w4fhes.jpg",
+    gallery: [
+      "https://res.cloudinary.com/dkh59ytfc/image/upload/v1778245531/photo_2026-05-08_16-03-39_jgzps8.jpg",
+      "https://res.cloudinary.com/dkh59ytfc/image/upload/v1778245559/photo_2026-05-08_16-04-32_cr9fmf.jpg",
+      "https://res.cloudinary.com/dkh59ytfc/image/upload/v1778245559/photo_2026-05-08_16-04-23_m7p0lm.jpg",
+      "https://res.cloudinary.com/dkh59ytfc/image/upload/v1778245559/photo_2026-05-08_16-04-28_p2hhmm.jpg",
+      "https://res.cloudinary.com/dkh59ytfc/image/upload/v1778245560/photo_2026-05-08_16-04-14_ov6zhv.jpg"
+    ]
+  },
+  {
+    titleAr: 'الظهور في برنامج "شباب على الهوا"',
+    titleEn: 'Appearance on "Shabab Ala El Hawa" TV Show',
+    descAr: 'ظهور أعضاء الفريق في برنامج "شباب على الهوا" للحديث عن أهداف الحملة وإنجازاتها.',
+    descEn: 'Team members appearing on the "Shabab Ala El Hawa" show to discuss campaign goals and achievements.',
+    expandedAr: 'شارك أعضاء فريق U-TURN B في حلقة من برنامج "شباب على الهوا"، حيث تم مناقشة أهداف الحملة في نشر ثقافة العمل الحر بين الشباب المصري وتمكينهم اقتصادياً. تم التركيز على قصص النجاح والتحديات التي تواجه الشباب في مجال الفريلانس.',
+    expandedEn: 'U-TURN B team members participated in an episode of "Shabab Ala El Hawa," where the campaign\'s goals in spreading freelancing culture among Egyptian youth and economically empowering them were discussed. The focus was on success stories and challenges facing youth in the freelancing field.',
+    mainImage: "https://res.cloudinary.com/dkh59ytfc/image/upload/v1778245530/photo_2026-05-08_14-06-07_2_rsoet9.jpg",
+    gallery: [
+      "https://res.cloudinary.com/dkh59ytfc/image/upload/v1778245531/photo_2026-05-08_14-06-07_fyi4sj.jpg"
+    ]
   }
 ];
 
